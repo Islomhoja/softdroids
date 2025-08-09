@@ -1,6 +1,41 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    var menuBurger = document.querySelector('.menu-burger');
+    var menuBurgerParent = document.querySelector('.header-content');
+
+    menuBurger.addEventListener("click", function(){
+        menuBurger.classList.toggle("active");
+        menuBurgerParent.classList.toggle("active");
+    });
+
     
+    var subCat = document.querySelector('.category-choose-block');
+
+    subCat.addEventListener("click", function(){
+        subCat.classList.toggle("active");
+    })
+    
+    
+    const searchMob = document.querySelector('.search-mob');
+    const searchInput = searchMob?.querySelector('input');
+    
+    if (searchMob && searchInput) {
+        // Клик по иконке или контейнеру
+        searchMob.addEventListener("click", function (e) {
+            // Если клик именно по svg или div, а не по инпуту
+            if (e.target.tagName !== 'INPUT') {
+                searchMob.classList.add("active");
+                searchInput.focus();
+            }
+        });
+    
+        // Когда инпут теряет фокус — убираем active
+        searchInput.addEventListener("blur", function () {
+            searchMob.classList.remove("active");
+        });
+    }
+    
+
 
     var phoneInputs = document.querySelectorAll('input[type="tel"]');
   
