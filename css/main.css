@@ -172,6 +172,25 @@ input[type="search"]::-webkit-search-cancel-button{display: none;}
 .cat-mob-accordion::after{position: absolute;content: '';width: 22px;height: 13px;background-image: url(../img/arr.svg);background-position: center center;background-size: cover;background-repeat: no-repeat;top: 0;bottom: 0;right: 20px;margin: auto;transition: all .4s;}
 
 
+.name-product{font-family: "un-bold";font-size: 32px;color: var(--pererabotka-blue-dlya-teksta);margin-bottom: 21px;}
+.char-product{font-family: "sf-med";font-size: 24px;color: var(--pererabotka-blue-dlya-teksta);display: flex;justify-content: space-between;align-items: center;}
+.char-product+.char-product{margin-top: 15px;}
+.download-product{font-family: "open-med";font-size: 24px;text-align: center;color: #e8f0ff;background: #374a6e;border-radius: 20px;width: 230px;height: 40px;display: flex;align-items: center;justify-content: center;}
+.download-product:hover{background: var(--color-azure-10);}
+.feed-count-prod{background: var(--pererabotka-blue-dlya-teksta);border-radius: 15px;padding: 3px 0px 5px 0px;width: 100px;display: flex;justify-content: center;padding: 4px;font-family: "sf-bold";font-size: 50px;line-height: 115%;text-align: center;color: var(--color-white-solid);}
+.reiting-prod{width: 150px;height: 30px;}
+.voices-product{font-family: "open-semi";font-size: 12px;line-height: 115%;color: var(--pererabotka-blue-dlya-teksta);margin-top: 12px;}
+.feed-info-block{display: none;background: #fff9ec;border-radius: 15px;padding: 15px 17px;align-items: center;gap:30px;margin-bottom: 17px;}
+.product-description{font-family: "sf-med";font-size: 24px;color: var(--pererabotka-blue-dlya-teksta);}
+.product-description ul li{list-style: disc;}
+.product-description ul{padding-left: 35px;}
+.swip-screen-ttl{font-family: "open-bold";font-size: 20px;line-height: 115%;color: var(--pererabotka-blue-dlya-teksta);margin-bottom: 20px;}
+.screen-content{background: #6f8dc4;border-radius: 35px;padding: 20px 55px;width: 100%;margin-top: 90px;}
+.product-info-content{background: var(--color-white-solid);border-radius: 50px;padding: 50px 115px 185px;}
+.screenshot-img img{width: 100%;object-fit: cover;aspect-ratio: 240/135;}
+.swiper-screenshot{padding-bottom: 50px;}
+.swiper-screenshot .swiper-pagination-bullet{width: 12px;height: 12px;background: #e8f0ff;}
+.swiper-screenshot .swiper-pagination-bullet.swiper-pagination-bullet-active{background: #374a6e;}
 
 
 

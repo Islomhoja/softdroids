@@ -11,9 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
     
     var subCat = document.querySelector('.category-choose-block');
 
-    subCat.addEventListener("click", function(){
-        subCat.classList.toggle("active");
-    })
+    if(subCat){
+        subCat.addEventListener("click", function(){
+            subCat.classList.toggle("active");
+        });
+    }
     
     
     const searchMob = document.querySelector('.search-mob');
@@ -35,6 +37,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
     
+
+    const swiper = new Swiper(".swiper-screenshot", {
+        spaceBetween: 50,
+        slidesPerView: 3,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
 
 
     var phoneInputs = document.querySelectorAll('input[type="tel"]');
