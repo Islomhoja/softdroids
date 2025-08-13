@@ -44,6 +44,22 @@ document.addEventListener("DOMContentLoaded", function () {
         pagination: {
           el: ".swiper-pagination",
         },
+        breakpoints: {
+            // when window width is >= 640px
+            1: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            // when window width is >= 768px
+            991: {
+              slidesPerView: 2,
+              spaceBetween: 30
+            },
+            1600: {
+              slidesPerView: 3,
+              spaceBetween: 50
+            }
+        }
       });
 
 
